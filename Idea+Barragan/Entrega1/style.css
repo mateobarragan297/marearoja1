@@ -1,0 +1,1289 @@
+/*:root {
+  --New-Swatch: #6E0000;
+  --New-Swatch: #A00000;
+  --New-Swatch: #D70000;
+  --New-Swatch: #AFAFAF;
+  --New-Swatch: #D4D4D4;
+}*/
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-image: url("Fondo-pagina-marea.png");
+    height: 100%;
+    width: 100%;
+    /*background-size: cover;*/
+    background-size: 65%;
+    background-attachment: scroll;
+}
+
+
+
+/*HEADER*/
+header {
+    height: 8%;
+    width: 100%;
+    background: -webkit-linear-gradient(200deg, red, black);
+    background: linear-gradient(to bottom,red 30%, black 95%);
+    filter: grayscale(35%);
+}
+header nav {
+    font-family: sans-serif;
+    padding: 30px 25px 0 0;
+    z-index: 150;
+    float: right;
+    text-align: center;
+}
+nav ul li {
+    list-style: none;
+    color: white;
+    margin-left: 80px;
+    display: inline-block;
+}
+nav a {
+    font-family: sans-serif;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+nav ul li:hover {
+    transform: scale(1.2);
+    transition: all 0.6s;
+}
+nav a:hover {
+    color: black;
+    transform: scale(1.05);
+    transition: all 0.7s;
+    text-decoration: none;
+}
+.navbar-toggler{
+    width: 100%;
+    z-index: -1;
+}
+
+/*FIN HEADER*/
+
+
+
+#titulos{
+    background-image: linear-gradient(2deg);
+    background-image: linear-gradient(to bottom, black, rgba(255,255,255,0)20%), url(imageninicio.jpg);
+    width: 100%;
+    background-size: cover;
+    padding-bottom: 50%;
+}
+section h1 {
+    font-family: fantasy;
+    font-size: 100px;
+    color: red;
+    -webkit-text-stroke: 1px lightgrey;
+    text-transform: uppercase;
+    padding: 3% 0px 1% 0px;
+    filter: grayscale(25%);
+    z-index: 2;
+    position: relative;
+    text-align: center;
+    animation-name: efecto;
+    animation-iteration-count: 1;
+    /* animation-timing-function: ; */
+    animation-duration: 2s;
+    animation-delay: 0s;
+}
+@keyframes efecto {
+    0%{
+        opacity: 0;
+        font-size: 180px;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+section h2 {
+    font-size: 20px;
+    font-weight: 50px;
+    text-transform: uppercase;
+    font-family: fantasy;
+    letter-spacing: 0.5px;
+    color: black;
+    z-index: 3;
+    position: relative;
+    text-align: center;
+    animation-name: efecto2;
+    animation-iteration-count: 1;
+    /* animation-timing-function: ; */
+    animation-duration: 2s;
+    animation-delay: 0s;
+}
+@keyframes efecto2 {
+    0%{
+        opacity: 0;
+        font-size: 50%;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/*#seccion3 {
+    height: 15%;
+    width: 7%;
+    background-color: red;
+    padding: 17px;
+    border-radius: 45px;
+    border: 2px solid white;
+    filter: grayscale(10%);
+    position: absolute;
+    background-image: url(marearoja.png);
+    background-size: cover;
+    z-index: 1;
+}*/
+.imageninicio {
+    /*height: 120px;
+    width: 120px;*/
+    width: 8%;
+    padding: 1%;
+    /*filter: grayscale(10%);*/
+    position: relative;
+   /* margin-top: 0.5%;
+    margin-left: 0.5%;*/
+    transition: all 0.5s;
+    animation-name: escudo;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+@keyframes escudo{
+    0%{
+        opacity: 0;
+        width: 13%;
+    }
+
+    100%{
+        opacity: 1;
+        width: 8%;
+    }
+}
+
+
+
+/*PRIMERA FOTO Y PRIMER TEXTO----------------------------------------------------------------------------------------------*/
+.second {
+    padding-top: 5%;
+    display: grid;
+    grid-template-areas: 
+        "rectangulo1 imagen1 rectangulo2 cuerpo1";
+    grid-template-columns: 20% 10% 20% 20%;
+    margin-left: 25%;
+}
+.imagen1 {
+    height: 95%;
+    width: 170%;
+    filter: grayscale(10%);
+    z-index: 1;
+}
+.imagen1:hover {
+    filter: grayscale(90%);
+    transition:all .5s ease-in-out;
+}
+.cuerpo1 p {
+    /*height: auto;
+    width: 120%;*/
+    height: 25%;
+    width: 25%;
+    padding: 1%;
+    font-size: 25px;
+    font-family: sans-serif;
+    text-align: center;
+    color: black;
+    background-color: rgb(211, 211, 211, 0.7);
+    border: 2px solid white;
+    border-radius: 20px;
+    z-index: 2;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*FIN PRIMERA FOTO Y PRIMER TEXTO------------------------------------------------------------------------------------------*/
+
+
+
+
+/*SEGUNDA FOTO Y SEGUNDO TEXTO---------------------------------------------------------------------------------------------*/
+.third {
+    padding-top: 5%;
+    display: grid;
+    grid-template-areas: 
+        "rectangulo1 imagen1 rectangulo2 cuerpo1";
+    grid-template-columns: 20% 10% 20% 20%;
+    margin-left: 25%;
+
+}
+.imagen2 {
+    height: 90%;
+    width: 290%;
+    filter: grayscale(10%);
+    z-index: -1;
+}
+.imagen2:hover {
+    filter: grayscale(90%);
+    transition:all .5s ease-in-out;
+}
+.cuerpo2 p {
+    /* height: auto;
+    width: 120%; */
+    height: 25%;
+    width: 25%;
+    padding: 1%;
+    font-size: 25px;
+    font-family: sans-serif;
+    text-align: center;
+    color: black;
+    background-color: rgb(211, 211, 211, 0.7);
+    border: 2px solid white;
+    border-radius: 20px;
+    z-index: 2;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*FIN SEGUNDA FOTO Y SEGUNDO TEXTO-------------------------------------------------------------------------------------------*/
+
+
+
+
+/*RECTÁNGULOS PARA LAS IMAGENES----------------------------------------------------------------------------------------------*/
+.rectangulo1 {
+    height: 90%;
+    width: 200%;
+    background-color: black;
+    opacity: 80%;
+    z-index: -2;
+}
+.rectangulo2 {
+    height: 90%;
+    width: 200%;
+    background-color: red;
+    opacity: 80%;
+    filter: grayscale(30%);
+    z-index: -1;
+}
+/*FIN RECTÁNGULOS PARA IMAGENES--------------------------------------------------------------------------------------------------*/
+
+
+
+/*FORMULARIO CONTACTO-------------------------------------------------------------------------------------------------------------*/
+.formulario {
+    font-family: sans-serif;
+    font-size: 25px;
+    text-align: center;
+    line-height: 35px;
+    height: 60%;
+    width: 75%;
+    position: relative;
+    background: rgb(0, 0, 0, 80%);
+    color: white;
+    border-radius: 35px;
+    border: 6px;
+    border-color: red black red black;
+    border-style: groove;
+    justify-content: center;
+    padding-bottom: 2%;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+    box-shadow: 0px 20px 40px -6px black;
+    border-radius: 35px;
+}
+label{
+    padding: 1.2%;
+}
+.formulario input{
+    background-color:lightgrey;
+    filter: grayscale(30%);
+}
+.form{
+    text-align: center;
+    border-radius: 10px;
+}
+::placeholder{
+    color: black;
+}
+.comentarios {
+    padding:  8%;
+    text-align: center;
+    border-radius: 15px;
+}
+.form-group{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+}
+#enviar{
+   color: black;
+   background-color: lightgrey;
+   width: 10%;
+   border-radius: 10px;
+}
+#enviar:hover{
+    color: white;
+    background-color: darkgray;
+    transition:all .4s ease-in-out;
+}
+button{
+    background-color: rgb(235, 68, 68);
+    filter: grayscale(20%);
+    border-radius: 10px;
+    width: 11%;
+}
+button:hover{
+    color: white;
+    filter: grayscale(50%);
+    transition:all .4s ease-in-out;
+}
+/*FIN FORMULARIO CONTACTO-----------------------------------------------------------------------------------------------------------*/
+
+
+
+.fondo {
+    height: 70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+hr {
+    background-color: red;
+    height: 3px;
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+}
+footer {
+    font-family: sans-serif;
+    font-size: 20px;
+    color: rgb(165, 161, 161);
+    background-color: black;
+    background-size: cover;
+    height: 30%;
+    width: 100%;
+    z-index: 0;
+    position: relative;
+}
+.contacto {
+    font-size: 22px;
+    color: lightgrey;
+    text-decoration: underline; 
+    text-transform: capitalize;
+    padding: 25px 25px 0px 25px;
+}
+.instagram {
+    font-size: 22px;
+    color: lightgrey;
+    text-decoration: none; 
+    text-transform: capitalize;
+    padding: 25px 25px 25px 5px;
+}
+#mail {
+    font-size: 18px;
+    color: lightgrey;
+    text-decoration: none;
+    padding: 25px 25px 25px 10px;
+    display: inline-block;
+}
+.fa-instagram {
+    padding: 25px 0px 0px 25px;
+    font-size: 25px;
+}
+.fa-envelope {
+    padding: 25px 0px 0px 25px;
+    font-size: 25px;
+}
+footer a:hover {
+    color: red;
+}
+.regresar {
+    height: 60px;
+    width: 60px;
+    background-color: red;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 100%;
+    border: 2px solid black;
+    text-align: center;
+    line-height: 75px;
+    z-index: 150;
+    filter: grayscale(30%);
+}
+.regresar i {
+    color: white;
+    font-size: 33px;
+    text-shadow: 0 0 10px black;
+}
+
+@media only screen and (max-width: 360px){
+    nav a{
+        font-size: 6px; 
+    }
+    nav ul li{
+        margin-left: 12px;
+    }
+    .imageninicio{
+        height: 6%;
+        border-radius: 12px;
+    }
+    header{
+        height: 37px;
+    }
+    header nav{
+        padding: 8px 25px 0 0;
+    }
+    .cuerpo1 p{    
+        font-size: 6px;       
+    }
+    .cuerpo2 p{
+        font-size: 6px;
+    }
+    section h1{
+        font-size: 20px;
+        line-height: 0px;
+    }
+    section h2{
+        font-size: 5px;
+    }
+    .instagram{
+        font-size: 6px; 
+    }
+    .contacto{
+        font-size: 6px; 
+    }
+    #mail{
+        font-size: 6px; 
+    }
+    .fa-instagram{
+        padding: 25px 0px 0px 25px;
+        font-size: 16px;
+    }
+    .fa-envelope{
+        padding: 25px 0px 0px 25px;
+        font-size: 16px;
+    }
+    .form{
+        height: 20px;
+        width: 170px;
+        font-size: 7px;
+    }
+    label{
+        font-size: 8px;
+    }
+    .texto{
+        font-size: 10px;
+        text-decoration: underline;
+    }
+    .comentarios{
+        width: 85%;
+        font-size: 7px;
+    }
+    .form-group{
+        font-size: 9px;
+    }
+    input{
+        transition: all 1s;
+    }
+    input:focus{
+        font-size: 10px;
+    }
+    #enviar{
+        font-size: 11px;
+        width: 20%;
+    }
+    .boton{
+        font-size: 11px;
+        width: 25%;
+    }
+    .fondo {
+        height: 40px;
+    }
+}
+@media only screen and (min-width: 360px){
+    nav a{
+        font-size: 6px;
+    }
+    nav ul li{
+        margin-left: 12px;
+    }
+    .imageninicio{
+        height: 6%;
+        border-radius: 12px;
+    }
+    .cuerpo1 p{
+        font-size: 6px;
+    }
+    .cuerpo2 p{
+        font-size: 6px;
+    }
+    section h1{
+        font-size: 20px;
+        line-height: 1px;
+    }
+    section h2{
+        font-size: 5px;
+    }
+    header{
+        height: 37px;
+    }
+    header nav{
+        padding: 8px 25px 0 0;
+    }
+    .instagram{
+        font-size: 10px; 
+    }
+    .contacto{
+        font-size: 10px; 
+    }
+    #mail{
+        font-size: 10px; 
+    }
+    .fa-instagram{
+        padding: 25px 0px 0px 25px;
+        font-size: 16px;
+    }
+    .fa-envelope{
+        padding: 25px 0px 0px 25px;
+        font-size: 16px;
+    }
+    .form{
+        height: 20px;
+        width: 180px;
+        font-size: 8px;
+    }
+    label{
+        font-size: 9px;
+    }
+    .texto{
+        font-size: 11px;
+        text-decoration: underline;
+    }
+    .comentarios{
+        width: 65%;
+        font-size: 8px;
+    }
+    .form-group{
+        font-size: 10px;
+    }
+    input{
+        transition: all 1s;
+    }
+    input:focus{
+        font-size: 11px;
+    }
+    #enviar{
+        font-size: 12px;
+        width: 20%;
+    }
+    .boton{
+        font-size: 12px;
+        width: 25%;
+    }
+    .fondo {
+        height: 40px;
+    }
+}
+@media only screen and (min-width: 480px){
+    nav a{
+        font-size: 7px; 
+    }
+    nav ul li{
+        margin-left: 18px;
+    }
+    .imageninicio{
+        height: 7%;
+        border-radius: 15px;
+    }
+    .cuerpo1 p{    
+        font-size: 7px;       
+    }
+    .cuerpo2 p{
+        font-size: 7px;
+    }
+    section h1{
+        font-size: 25px;
+    }
+    section h2{
+        font-size: 6px;
+    }
+    header{
+        height: 45px;
+    }
+    header nav{
+        padding: 12px 25px 0 0;
+    }
+    .instagram{
+        font-size: 11px; 
+    }
+    .contacto{
+        font-size: 11px; 
+    }
+    #mail{
+        font-size: 11px; 
+    }
+    .fa-instagram{
+        padding: 25px 0px 0px 25px;
+        font-size: 18px;
+    }
+    .fa-envelope{
+        padding: 25px 0px 0px 25px;
+        font-size: 18px;
+    }
+    label{
+        font-size: 9px;
+    }
+    .form{
+        height: 20px;
+        width: 190px;
+        font-size: 8px;
+    }
+    .comentarios{
+        font-size: 8px;
+    }
+    .form-group{
+        font-size: 10px;
+    }
+    .texto{
+        font-size: 12px;
+        text-decoration: underline;
+    }
+    input{
+        transition: all 1s;
+    }
+    input:focus{
+        font-size: 11px;
+    }
+    .fondo {
+        height: 45px;
+    }
+    #enviar{
+        font-size: 14px;
+        width: 20%;
+    }
+    .boton{
+        font-size: 14px;
+        width: 25%;
+    }
+}
+@media only screen and (min-width: 600px){
+    nav a{
+        font-size: 8px; 
+    }
+    nav ul li{
+        margin-left: 25px;
+    }
+    .imageninicio{
+        height: 8%;
+        border-radius: 20px;
+    }
+    .cuerpo1 p{    
+        font-size: 8px;       
+    }
+    .cuerpo2 p{
+        font-size: 8px;
+    }
+    section h1{
+        font-size: 30px;
+    }
+    section h2{
+        font-size: 8px;
+    }
+    header{
+        height: 50px;
+    }
+    header nav{
+        padding: 16px 25px 0 0;
+    }
+    .instagram{
+        font-size: 11px; 
+    }
+    .contacto{
+        font-size: 11px; 
+    }
+    #mail{
+        font-size: 11px; 
+    }
+    .fa-instagram{
+        padding: 25px 0px 0px 25px;
+        font-size: 18px;
+    }
+    .fa-envelope{
+        padding: 25px 0px 0px 25px;
+        font-size: 18px;
+    }
+    label{
+        font-size: 10px;
+    }
+    .form{
+        height: 25px;
+        width: 210px;
+        font-size: 9px;
+    }
+    .comentarios{
+        font-size: 9px;
+    }
+    .form-group{
+        font-size: 11px;
+    }
+    .texto{
+        font-size: 13px;
+        text-decoration: underline;
+    }
+    input{
+        transition: all 1s;
+    }
+    input:focus{
+        font-size: 15px;
+    }
+    #enviar{
+        font-size: 15px;
+        width: 20%;
+    }
+    .boton{
+        font-size: 15px;
+        width: 25%;
+    }
+    .fondo {
+        height: 50px;
+    }
+}
+@media only screen and (min-width: 750px){
+    nav a{
+        font-size: 10px; 
+    }
+    nav ul li{
+        margin-left: 30px;
+    }
+    .imageninicio{
+        height: 8%;
+        border-radius: 25px;
+    }
+    .cuerpo1 p{    
+        font-size: 10px;      
+    }
+    .cuerpo2 p{
+        font-size: 10px;
+    }
+    section h1{
+        font-size: 40px;
+    }
+    section h2{
+        font-size: 10px;
+    }
+    header{
+        height: 55px;
+    }
+    header nav{
+        padding: 20px 25px 0 0;
+    }
+    .instagram{
+        font-size: 12px; 
+    }
+    .contacto{
+        font-size: 12px; 
+    }
+    #mail{
+        font-size: 12px; 
+    }
+    .fa-instagram{
+        padding: 25px 0px 0px 25px;
+        font-size: 19px;
+    }
+    .fa-envelope{
+        padding: 25px 0px 0px 25px;
+        font-size: 19px;
+    }
+    label{
+        font-size: 12px;
+    }
+    .form{
+        height: 25px;
+        width: 230px;
+        font-size: 10px;
+    }
+    .comentarios{
+        font-size: 10px;
+    }
+    .form-group{
+        font-size: 12px;
+    }
+    .texto{
+        font-size: 14px;
+        text-decoration: underline;
+    }
+    input{
+        transition: all 1s;
+    }
+    input:focus{
+        font-size: 16px;
+    }
+    #enviar{
+        font-size: 15px;
+    }
+    .boton{
+        font-size: 15px;
+    }
+    .fondo {
+        height: 55px;
+    }
+}
+@media only screen and (min-width: 900px){
+    nav a{
+        font-size: 12px;   
+    }
+    nav ul li{
+        margin-left: 35px;
+    }
+    .imageninicio{
+        height: 9%;
+        border-radius: 30px;
+    }
+    .cuerpo1 p{    
+        font-size: 12px;       
+    }
+    .cuerpo2 p{
+        font-size: 12px;
+    }
+    .cuerpo2 p{
+        font-size: 12px;
+    }
+    section h1{
+        font-size: 50px;
+    }
+    section h2{
+        font-size: 15px;
+    }
+    header{
+        height: 55px;
+    }
+    .instagram{
+        font-size: 13px; 
+    }
+    .contacto{
+        font-size: 13px; 
+    }
+    #mail{
+        font-size: 13px; 
+    }
+    .fa-instagram{
+        padding: 25px 0px 0px 25px;
+        font-size: 21px;
+    }
+    .fa-envelope{
+        padding: 25px 0px 0px 25px;
+        font-size: 21px;
+    }
+    label{
+        font-size: 15px;
+    }
+    .form{
+        height: 25px;
+        width: 245px;
+        font-size: 11px;
+    }
+    .comentarios{
+        font-size: 11px;
+    }
+    .form-group{
+        font-size: 13px;
+    }
+    .form-group input{
+        background-color: black;
+    }
+    .form-control-file{
+        border-radius: 5px;
+    }
+    .texto{
+        font-size: 16px;
+        text-decoration: underline;
+    }
+    input{
+        transition: all 1s;
+    }
+    input:focus{
+        font-size: 17px;
+    }
+    #enviar{
+        font-size: 16px;
+    }
+    .boton{
+        font-size: 16px;
+    }
+    .fondo {
+        height: 60px;
+    }
+}
+@media only screen and (min-width: 1000px){
+    nav a{
+        font-size: 14px;   
+    }
+    nav ul li{
+        margin-left: 45px;
+    }
+    .imageninicio{
+        height: 10%;
+        border-radius: 35px;
+    }
+    .cuerpo1 p{    
+        font-size: 15px;       
+    }
+    .cuerpo2 p{
+        font-size: 15px;
+    }
+    section h1{
+        font-size: 70px;
+    }
+    section h2{
+        font-size: 20px;
+    }
+    header{
+        height: 60px;
+    }
+    .instagram{
+        font-size: 14px; 
+    }
+    .contacto{
+        font-size: 14px; 
+    }
+    #mail{
+        font-size: 14px; 
+    }
+    .fa-instagram{
+        padding: 25px 0px 0px 25px;
+        font-size: 22px;
+    }
+    .fa-envelope{
+        padding: 25px 0px 0px 25px;
+        font-size: 22px;
+    }
+    label{
+        font-size: 20px;
+    }
+    .form{
+        height: 25px;
+        width: 260px;
+        font-size: 12px;
+    }
+    .comentarios{
+        font-size: 12px;
+    }
+    .form-group{
+        font-size: 15px;
+    }
+    .texto{
+        font-size: 18px;
+        text-decoration: underline;
+    }
+    input{
+        transition: all 1s;
+    }
+    input:focus{
+        font-size: 18px;
+    }
+    #enviar{
+        font-size: 17px;
+    }
+    .boton{
+        font-size: 17px;
+    }
+    .fondo {
+        height: 65px;
+    }
+}
+@media only screen and (min-width: 1250px){
+    nav a{
+        font-size: 17px;
+    }
+    nav ul li{
+        margin-left: 60px;
+    }
+    .imageninicio{
+        height: 11%;
+        border-radius: 40px;
+    }
+    header{
+        height: 65px;
+    }
+    header nav{
+        padding: 25px 25px 0 0;
+    }
+    .instagram{
+        font-size: 18px; 
+    }
+    .contacto{
+        font-size: 18px; 
+    }
+    #mail{
+        font-size: 18px; 
+    }
+    .fa-instagram{
+        padding: 25px 0px 0px 25px;
+        font-size: 26px;
+    }
+    .fa-envelope{
+        padding: 25px 0px 0px 25px;
+        font-size: 26px;
+    }
+    label{
+        font-size: 20px;
+    }
+    .form{
+        height: 25px;
+        width: 300px;
+        font-size: 13px;
+    }
+    .comentarios{
+        font-size: 13px;
+    }
+    .form-group{
+        font-size: 17px;
+    }
+    input{
+        transition: all 1s;
+    }
+    input:focus{
+        font-size: 19px;
+    }
+    .texto{
+        font-size: 20px;
+        text-decoration: underline;
+    }
+    #enviar{
+        font-size: 19px;
+    }
+    .boton{
+        font-size: 19px;
+    }
+    .fondo {
+        height: 65px;
+    }
+}
+@media only screen and (min-width: 1400px){
+    nav a{
+        font-size: 20px;   
+    }
+    nav ul li{
+        margin-left: 70px;
+    }
+    .imageninicio{
+        height: 12%;
+        border-radius: 45px;
+    }
+    .cuerpo1 p{
+        font-size: 20px;
+    }
+    .cuerpo2 p{
+        font-size: 20px;
+    }
+    section h1{
+        font-size: 100px;
+    }
+    section h1{
+        font-size: 90px;
+    }
+    section h2{
+        font-size: 25px;
+    }
+    header{
+        height: 70px;
+    }
+    header nav{
+        padding: 27px 25px 0 0;
+    }
+    .instagram{
+        font-size: 20px; 
+    }
+    .contacto{
+        font-size: 20px; 
+    }
+    #mail{
+        font-size: 20px; 
+    }
+    .fa-instagram{
+        padding: 25px 0px 0px 25px;
+        font-size: 30px;
+    }
+    .fa-envelope{
+        padding: 25px 0px 0px 25px;
+        font-size: 30px;
+    }
+    label{
+        font-size: 20px;
+    }
+    .form{
+        height: 30px;
+        width: 320px;
+        font-size: 14px;
+    }
+    .comentarios{
+        font-size: 14px;
+    }
+    .form-group{
+        font-size: 18px;
+    }
+    input{
+        transition: all 1s;
+    }
+    input:focus{
+        font-size: 21px;
+    }
+    .texto{
+        font-size: 25px;
+        text-decoration: underline;
+    }
+    .fondo {
+        height: 70px;
+    }
+}
+@media only screen and (min-width: 1789px){
+    nav a{
+        font-size: 20px;   
+    }
+    nav ul li{
+        margin-left: 80px;
+    }
+    .imageninicio{
+        height: 13%;
+        border-radius: 50px;
+    }
+    .cuerpo1 p{ 
+        font-size: 25px;
+    }
+    .cuerpo2 p{
+        font-size: 25px;
+    }
+    section h1{
+        font-size: 125px;
+    }
+    section h2{
+        font-size: 35px;
+    }
+    header{
+        height: 70px;
+    }
+    header nav{
+        padding: 25px 25px 0 0;
+    }
+    .instagram{
+        font-size: 20px; 
+    }
+    .contacto{
+        font-size: 20px; 
+    }
+    #mail{
+        font-size: 20px; 
+    }
+    .fa-instagram{
+        padding: 25px 0px 0px 25px;
+        font-size: 30px;
+    }
+    .fa-envelope{
+        padding: 25px 0px 0px 25px;
+        font-size: 30px;
+    }
+    label{
+        font-size: 25px;
+    }
+    .form{
+        height: 35px;
+        width: 350px;
+        font-size: 15px;
+    }
+    .comentarios{
+        font-size: 15px;
+    }
+    .form-group{
+        font-size: 20px;
+    }
+    input{
+        transition: all 1s;
+    }
+    input:focus{
+        font-size: 23px;
+    }
+    .texto{
+        font-size: 30px;
+        text-decoration: underline;
+    }
+    .fondo {
+        height: 70px;
+    }
+}
+@media only screen and (min-width: 2300px){
+    nav a{
+        font-size: 25px;   
+    }
+    nav ul li{
+        margin-left: 90px;
+    }
+    .imageninicio{
+        height: 16%;
+    }
+    .cuerpo1 p{ 
+        font-size: 35px;
+    }
+    .cuerpo2 p{
+        font-size: 35px;
+    }
+    section h1{
+        font-size: 150px;
+    }
+    section h2{
+        font-size: 40px;
+    }
+    header{
+        height: 75px;
+    }
+    header nav{
+        padding: 25px 25px 0 0;
+    }
+    .instagram{
+        font-size: 25px; 
+    }
+    .contacto{
+        font-size: 25px; 
+    }
+    #mail{
+        font-size: 25px; 
+    }
+    label{
+        font-size: 30px;
+    }
+    .form{
+        height: 35px;
+        width: 375px;
+        font-size: 16px;
+    }
+    .comentarios{
+        font-size: 16px;
+    }
+    input{
+        transition: all 1s;
+    }
+    input:focus{
+        font-size: 24px;
+    }
+    .texto{
+        font-size: 35px;
+        text-decoration: underline;
+    }
+    .fondo {
+        height: 85px;
+    }
+    footer{
+        height: 20%;
+    }
+}
