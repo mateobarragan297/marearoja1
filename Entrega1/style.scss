@@ -1,10 +1,9 @@
-/*:root {
-  --New-Swatch: #6E0000;
-  --New-Swatch: #A00000;
-  --New-Swatch: #D70000;
-  --New-Swatch: #AFAFAF;
-  --New-Swatch: #D4D4D4;
-}*/
+  $color1: #6E0000;
+  $color2: #A00000;
+  $color3: #D70000;
+  $color4: #AFAFAF;
+  $color5: #D4D4D4;
+
 *{
     margin: 0;
     padding: 0;
@@ -27,31 +26,36 @@ body {
 header {
     height: 8%;
     width: 100%;
-    background: -webkit-linear-gradient(200deg, red, black);
-    background: linear-gradient(to bottom,red 30%, black 95%);
+    background: -webkit-linear-gradient(200deg, $color3, black);
+    background: linear-gradient(to bottom,$color3 30%, black 95%);
     filter: grayscale(35%);
+
+    /*NESTING*/
+    & nav{ 
+        font-family: sans-serif;
+        padding: 30px 25px 0 0;
+        z-index: 150;
+        float: right;
+        text-align: center;
+
+        & ul li {
+            list-style: none;
+            color: white;
+            margin-left: 80px;
+            display: inline-block;
+        }
+
+        & a {
+            font-family: sans-serif;
+            text-transform: capitalize;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+    }
 }
-header nav {
-    font-family: sans-serif;
-    padding: 30px 25px 0 0;
-    z-index: 150;
-    float: right;
-    text-align: center;
-}
-nav ul li {
-    list-style: none;
-    color: white;
-    margin-left: 80px;
-    display: inline-block;
-}
-nav a {
-    font-family: sans-serif;
-    text-transform: capitalize;
-    font-size: 20px;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-}
+
 nav ul li:hover {
     transform: scale(1.2);
     transition: all 0.6s;
@@ -81,7 +85,7 @@ nav a:hover {
 section h1 {
     font-family: fantasy;
     font-size: 100px;
-    color: red;
+    color: $color3;
     -webkit-text-stroke: 1px lightgrey;
     text-transform: uppercase;
     padding: 3% 0px 1% 0px;
@@ -264,7 +268,7 @@ section h2 {
 .rectangulo2 {
     height: 90%;
     width: 200%;
-    background-color: red;
+    background-color: $color3;
     opacity: 80%;
     filter: grayscale(30%);
     z-index: -1;
@@ -286,7 +290,7 @@ section h2 {
     color: white;
     border-radius: 35px;
     border: 6px;
-    border-color: red black red black;
+    border-color: $color3 black $color3 black;
     border-style: groove;
     justify-content: center;
     padding-bottom: 2%;
@@ -357,7 +361,7 @@ button:hover{
     margin-right: auto;
 }
 hr {
-    background-color: red;
+    background-color: $color3;
     height: 3px;
     width: 75%;
     display: block;
