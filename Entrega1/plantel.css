@@ -1,0 +1,838 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-image: url("Fondo-pagina-marea.png");
+    height: 100%;
+    width: 100%;
+    background-size: 65%;
+    background-attachment: scroll;
+}
+
+
+
+/*HEADER*/
+header {
+    height: 80px;
+    width: 100%;
+    background: -webkit-linear-gradient(200deg, red, black);
+    background: linear-gradient(left right, red, black);
+    filter: grayscale(25%);
+}
+header nav {
+    font-family: sans-serif;
+    padding: 30px 25px 0 0;
+    z-index: 150;
+    float: right;
+    text-align: center;
+}
+nav ul li {
+    list-style: none;
+    color: white;
+    margin-left: 80px;
+    display: inline-block;
+}
+nav a {
+    font-family: sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+nav ul li:hover {
+    transform: scale(1.2);
+    transition: all 0.6s;
+}
+nav a:hover {
+    color: black;
+    transform: scale(1.05);
+    transition: all 0.7s;
+}
+/*FIN HEADER*/
+
+
+
+
+
+
+
+/*IMAGEN INICIO*/
+.imageninicio {
+    /*height: 120px;
+    width: 120px;*/
+    width: 8%;
+    padding: 1%;
+    filter: grayscale(10%);
+    position: relative;
+    transition: all 0.5s;
+    animation-name: escudo;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+@keyframes escudo{
+    0%{
+        opacity: 0;
+        width: 13%;
+    }
+
+    100%{
+        opacity: 1;
+        width: 8%;
+    }
+}
+.imageninicio:hover {
+    height: 250px;
+    width: 250px;
+}
+/*FIN IMAGEN INICIO*/
+
+
+
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 50px;
+    text-transform: uppercase;
+    font-family: fantasy;
+    padding: 1%;
+    position: relative;
+    letter-spacing: 0.5px;
+    color: black;
+    animation-name: efecto;
+    animation-iteration-count: 1;
+    /* animation-timing-function: ; */
+    animation-duration: 2s;
+    animation-delay: 0s;
+}
+@keyframes efecto {
+    0%{
+        opacity: 0;
+        font-size: 100px;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+
+/*INICIO IMAGENES Y PARRAFOS*/
+.parte1{
+    padding-top: 5%;
+    display: grid;
+    grid-template-areas: 
+        "rectangulo1 cuerpo rectangulo2 parrafo2";
+    grid-template-columns: 20% 10% 20% 20%;    
+}
+.nombres {
+    font-size: 40px;
+    font-family: fantasy;
+    color: black;
+    line-height: 70px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin-left: 4%;
+    text-align: center;
+}
+span {
+    font-size: 40px;
+    font-family: sans-serif;
+    color: red;
+    font-family: fantasy;
+}
+.parrafo2 p{
+    /*height: auto;
+    width: 130%;*/
+    height: 25%;
+    width: 25%;
+    padding: 1%;
+    font-size: 25px;
+    text-align: center;
+    font-family: sans-serif;
+    color: black;
+    background-color: rgb(211, 211, 211, 0.7);
+    border: 2px solid white;
+    border-radius: 20px;
+    z-index: 2;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cuerpo { /*IMAGEN*/
+    height: auto;
+    width: 425%;
+    filter: grayscale(10%);
+    z-index: -1;
+}
+.cuerpo:hover {
+    filter: grayscale(90%);
+    transition:all .5s ease-in-out;
+}
+/*FIN IMAGENES Y PARRAFOS*/
+
+
+
+/*RECTANGULOS*/
+.rectangulo1 {
+    height: 100%;
+    width: 200%;
+    background-color: black;
+    opacity: 80%;
+    z-index: -2;
+    font-size: 0.1px;
+}
+.rectangulo2 {
+    height: 100%;
+    width: 200%;
+    background-color: red;
+    opacity: 80%;
+    z-index: -2;
+    font-size: 0.1px;
+    filter: grayscale(30%);
+}
+/* FIN RECTANGULOS*/
+
+
+.fondo {
+    height: 70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+hr {
+    background-color: red;
+    height: 3px;
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+}
+footer {
+    font-family: sans-serif;
+    font-size: 20px;
+    color: rgb(165, 161, 161);
+    background-color: black;
+    background-size: cover;
+    height: 300px;
+    z-index: 100;
+}
+.contacto {
+    font-size: 22px;
+    color: lightgrey;
+    text-decoration: underline; 
+    text-transform: capitalize;
+    padding: 25px 25px 0px 25px;
+}
+.instagram {
+    font-size: 22px;
+    color: lightgrey;
+    text-decoration: none; 
+    text-transform: capitalize;
+    padding: 25px 25px 25px 5px;
+}
+#mail {
+    font-size: 18px;
+    color: lightgrey;
+    text-decoration: none;
+    padding: 25px 25px 25px 10px;
+    display: inline-block;
+}
+.fa-instagram {
+    padding: 25px 0px 0px 25px;
+    font-size: 25px;
+}
+.fa-envelope {
+    padding: 25px 0px 0px 25px;
+    font-size: 25px;
+}
+footer a:hover {
+    color: red;
+}
+.regresar {
+    height: 60px;
+    width: 60px;
+    background-color: red;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 100%;
+    border: 2px solid black;
+    text-align: center;
+    line-height: 75px;
+    z-index: 150;
+    filter: grayscale(30%);
+}
+.regresar i {
+    color: white;
+    font-size: 33px;
+    text-shadow: 0 0 10px black;
+}
+
+
+
+
+@media only screen and (max-width: 360px){
+    nav a{
+        font-size: 6px; 
+    }
+    nav ul li{
+        margin-left: 12px;
+    }
+    .imageninicio{
+        height: 6%;
+        border-radius: 12px;
+    }
+    header{
+        height: 37px;
+    }
+    header nav{
+        padding: 8px 25px 0 0;
+    }
+    h1{
+        font-size: 21px;
+    }
+    .parrafo2 p{
+        font-size: 6px;
+        line-height: 10px;
+    }
+    .nombres{
+        font-size: 10px;
+        line-height: 20px;
+    }
+    span{
+        font-size: 10px;
+    }
+    .instagram{
+        font-size: 6px; 
+    }
+    .contacto{
+        font-size: 6px; 
+    }
+    #mail{
+        font-size: 6px; 
+    }
+    .fa-instagram{
+        padding: 25px 0px 0px 25px;
+        font-size: 16px;
+    }
+    .fa-envelope{
+        padding: 25px 0px 0px 25px;
+        font-size: 16px;
+    }
+    .fondo {
+        height: 40px;
+    }
+}
+@media only screen and (min-width: 360px){
+    nav a{
+        font-size: 6px;
+    }
+    nav ul li{
+        margin-left: 12px;
+    }
+    .imageninicio{
+        height: 6%;
+        border-radius: 12px;
+    }
+    h1{
+        font-size: 21px;
+    }
+    .parrafo2 p{
+        font-size: 6px;
+        line-height: 10px;
+    }
+    header{
+        height: 37px;
+    }
+    header nav{
+        padding: 8px 25px 0 0;
+    }
+    .nombres{
+        font-size: 10px;
+        line-height: 20px;
+    }
+    span{
+        font-size: 10px;
+    }
+    .instagram{
+        font-size: 10px; 
+    }
+    .contacto{
+        font-size: 10px; 
+    }
+    #mail{
+        font-size: 10px; 
+    }
+    .fa-instagram{
+        padding: 25px 0px 0px 25px;
+        font-size: 16px;
+    }
+    .fa-envelope{
+        padding: 25px 0px 0px 25px;
+        font-size: 16px;
+    }
+    .fondo {
+        height: 40px;
+    }
+}
+@media only screen and (min-width: 480px){
+    nav a{
+        font-size: 7px; 
+    }
+    nav ul li{
+        margin-left: 18px;
+    }
+    .imageninicio{
+        height: 7%;
+        border-radius: 15px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    .parrafo2 p{
+        font-size: 7px;
+        line-height: 11px;
+    }
+    header{
+        height: 45px;
+    }
+    header nav{
+        padding: 12px 25px 0 0;
+    }
+    .nombres{
+        font-size: 15px;
+        line-height: 25px;
+    }
+    span{
+        font-size: 15px;
+    }
+    .instagram{
+        font-size: 11px; 
+    }
+    .contacto{
+        font-size: 11px; 
+    }
+    #mail{
+        font-size: 11px; 
+    }
+    .fa-instagram{
+        padding: 25px 0px 0px 25px;
+        font-size: 18px;
+    }
+    .fa-envelope{
+        padding: 25px 0px 0px 25px;
+        font-size: 18px;
+    }
+    .fondo {
+        height: 45px;
+    }
+}
+@media only screen and (min-width: 600px){
+    nav a{
+        font-size: 8px; 
+    }
+    nav ul li{
+        margin-left: 25px;
+    }
+    .imageninicio{
+        height: 8%;
+        border-radius: 20px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .parrafo2 p{
+        font-size: 8px;
+        line-height: 13px;
+    }
+    header{
+        height: 50px;
+    }
+    header nav{
+        padding: 16px 25px 0 0;
+    }
+    .nombres{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    span{
+        font-size: 20px;
+    }
+    .instagram{
+        font-size: 11px; 
+    }
+    .contacto{
+        font-size: 11px; 
+    }
+    #mail{
+        font-size: 11px; 
+    }
+    .fa-instagram{
+        padding: 25px 0px 0px 25px;
+        font-size: 18px;
+    }
+    .fa-envelope{
+        padding: 25px 0px 0px 25px;
+        font-size: 18px;
+    }
+    .fondo {
+        height: 50px;
+    }
+}
+@media only screen and (min-width: 750px){
+    nav a{
+        font-size: 10px; 
+    }
+    nav ul li{
+        margin-left: 30px;
+    }
+    .imageninicio{
+        height: 8%;
+        border-radius: 25px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .parrafo2 p{
+        font-size: 10px;
+        line-height: 16px;
+    }
+    header{
+        height: 55px;
+    }
+    header nav{
+        padding: 20px 25px 0 0;
+    }
+    .nombres{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    span{
+        font-size: 20px;
+    }
+    .instagram{
+        font-size: 12px; 
+    }
+    .contacto{
+        font-size: 12px; 
+    }
+    #mail{
+        font-size: 12px; 
+    }
+    .fa-instagram{
+        padding: 25px 0px 0px 25px;
+        font-size: 19px;
+    }
+    .fa-envelope{
+        padding: 25px 0px 0px 25px;
+        font-size: 19px;
+    }
+    .fondo {
+        height: 55px;
+    }
+}
+@media only screen and (min-width: 900px){
+    nav a{
+        font-size: 12px;   
+    }
+    nav ul li{
+        margin-left: 35px;
+    }
+    .imageninicio{
+        height: 9%;
+        border-radius: 30px;
+    }
+    h1{
+        font-size: 35px;
+    }
+    .parrafo2 p{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    header{
+        height: 55px;
+    }
+    .nombres{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    span{
+        font-size: 25px;
+    }
+    .instagram{
+        font-size: 13px; 
+    }
+    .contacto{
+        font-size: 13px; 
+    }
+    #mail{
+        font-size: 13px; 
+    }
+    .fa-instagram{
+        padding: 25px 0px 0px 25px;
+        font-size: 21px;
+    }
+    .fa-envelope{
+        padding: 25px 0px 0px 25px;
+        font-size: 21px;
+    }
+    .fondo {
+        height: 60px;
+    }
+}
+@media only screen and (min-width: 1000px){
+    nav a{
+        font-size: 14px;   
+    }
+    nav ul li{
+        margin-left: 45px;
+    }
+    .imageninicio{
+        height: 10%;
+        border-radius: 35px;
+    }
+    h1{
+        font-size: 35px;
+    }
+    .parrafo2 p{
+        font-size: 15px;
+        line-height: 25px;
+    }
+    header{
+        height: 60px;
+    }
+    .nombres{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    span{
+        font-size: 30px;
+    }
+    .instagram{
+        font-size: 14px; 
+    }
+    .contacto{
+        font-size: 14px; 
+    }
+    #mail{
+        font-size: 14px; 
+    }
+    .fa-instagram{
+        padding: 25px 0px 0px 25px;
+        font-size: 22px;
+    }
+    .fa-envelope{
+        padding: 25px 0px 0px 25px;
+        font-size: 22px;
+    }
+    .fondo {
+        height: 65px;
+    }
+}
+@media only screen and (min-width: 1250px){
+    nav a{
+        font-size: 17px;
+    }
+    nav ul li{
+        margin-left: 60px;
+    }
+    .imageninicio{
+        height: 11%;
+        border-radius: 40px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .parrafo2 p{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    header{
+        height: 65px;
+    }
+    header nav{
+        padding: 25px 25px 0 0;
+    }
+    .nombres{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    span{
+        font-size: 30px;
+    }
+    .instagram{
+        font-size: 18px; 
+    }
+    .contacto{
+        font-size: 18px; 
+    }
+    #mail{
+        font-size: 18px; 
+    }
+    .fa-instagram{
+        padding: 25px 0px 0px 25px;
+        font-size: 26px;
+    }
+    .fa-envelope{
+        padding: 25px 0px 0px 25px;
+        font-size: 26px;
+    }
+    .fondo {
+        height: 65px;
+    }
+}
+@media only screen and (min-width: 1400px){
+    nav a{
+        font-size: 20px;   
+    }
+    nav ul li{
+        margin-left: 70px;
+    }
+    .imageninicio{
+        height: 12%;
+        border-radius: 45px;
+    }
+    h1{
+        font-size: 45px;
+    }
+    .parrafo2 p{
+        font-size: 20px;
+        line-height: 35px;
+    }
+    header{
+        height: 70px;
+    }
+    header nav{
+        padding: 27px 25px 0 0;
+    }
+    .nombres{
+        font-size: 35px;
+        line-height: 40px;
+    }
+    span{
+        font-size: 35px;
+    }
+    .instagram{
+        font-size: 20px; 
+    }
+    .contacto{
+        font-size: 20px; 
+    }
+    #mail{
+        font-size: 20px; 
+    }
+    .fa-instagram{
+        padding: 25px 0px 0px 25px;
+        font-size: 30px;
+    }
+    .fa-envelope{
+        padding: 25px 0px 0px 25px;
+        font-size: 30px;
+    }
+    .fondo {
+        height: 70px;
+    }
+}
+@media only screen and (min-width: 1789px){
+    nav a{
+        font-size: 20px;   
+    }
+    nav ul li{
+        margin-left: 80px;
+    }
+    .imageninicio{
+        height: 13%;
+        border-radius: 50px;
+    }
+    h1{
+        font-size: 50px;
+    }
+    .parrafo2 p{
+        font-size: 25px;
+        line-height: 40px;
+    }
+    header{
+        height: 70px;
+    }
+    header nav{
+        padding: 25px 25px 0 0;
+    }
+    .nombres{
+        font-size: 40px;
+    }
+    span{
+        font-size: 40px;
+    }
+    .instagram{
+        font-size: 20px; 
+    }
+    .contacto{
+        font-size: 20px; 
+    }
+    #mail{
+        font-size: 20px; 
+    }
+    .fa-instagram{
+        padding: 25px 0px 0px 25px;
+        font-size: 30px;
+    }
+    .fa-envelope{
+        padding: 25px 0px 0px 25px;
+        font-size: 30px;
+    }
+    .fondo {
+        height: 70px;
+    }
+}
+@media only screen and (min-width: 2300px){
+    nav a{
+        font-size: 25px;   
+    }
+    nav ul li{
+        margin-left: 90px;
+    }
+    .imageninicio{
+        height: 16%;
+    }
+    h1{
+        font-size: 70px;
+    }
+    .parrafo2 p{
+        font-size: 30px;
+        line-height: 50px;
+    }
+    header{
+        height: 75px;
+    }
+    header nav{
+        padding: 25px 25px 0 0;
+    }
+    .nombres{
+        font-size: 50px;
+    }
+    span{
+        font-size: 50px;
+    }
+    .instagram{
+        font-size: 25px; 
+    }
+    .contacto{
+        font-size: 25px; 
+    }
+    #mail{
+        font-size: 25px; 
+    }
+    .fondo {
+        height: 85px;
+    }
+    footer{
+        height: 20%;
+    }
+}
