@@ -82,10 +82,15 @@ nav a:hover {
     background-size: cover;
     padding-bottom: 50%;
 }
+
+@mixin titles($ffamily, $fsize, $color){
+    font-family: $ffamily;
+    font-size: $fsize;
+    color: $color;
+}
+
 section h1 {
-    font-family: fantasy;
-    font-size: 100px;
-    color: $color3;
+    @include titles(fantasy, 100px, $color3);
     -webkit-text-stroke: 1px lightgrey;
     text-transform: uppercase;
     padding: 3% 0px 1% 0px;
@@ -109,12 +114,10 @@ section h1 {
     }
 }
 section h2 {
-    font-size: 20px;
+    @include titles(fantasy, 100px, black);
     font-weight: 50px;
     text-transform: uppercase;
-    font-family: fantasy;
     letter-spacing: 0.5px;
-    color: black;
     z-index: 3;
     position: relative;
     text-align: center;
@@ -266,10 +269,8 @@ section h2 {
     z-index: -2;
 }
 .rectangulo2 {
-    height: 90%;
-    width: 200%;
+    @extend .rectangulo1;
     background-color: $color3;
-    opacity: 80%;
     filter: grayscale(30%);
     z-index: -1;
 }
@@ -369,48 +370,74 @@ hr {
     margin-right: auto;
     margin-top: 3%;
 }
-footer {
+$links: (
+    link1: rgb(189, 0, 0),
+    link2: rgb(148, 0, 0),
+    link3: rgb(100, 0, 0),
+);
+
+@each $link, $color in $links {
+    .ftr--#{$link} {
+        background-color: $color;
+        border-radius: 10px;
+        width: 20%;
+        margin: 1%;
+        text-align: center;
+    }
+
+}
+
+.footer {
     font-family: sans-serif;
-    font-size: 20px;
     color: rgb(165, 161, 161);
     background-color: black;
     background-size: cover;
-    height: 30%;
     width: 100%;
+    padding: 1%;
     z-index: 0;
     position: relative;
 }
-.contacto {
-    font-size: 22px;
-    color: lightgrey;
-    text-decoration: underline; 
-    text-transform: capitalize;
-    padding: 25px 25px 0px 25px;
-}
 .instagram {
-    font-size: 22px;
+    font-size: 18px;
     color: lightgrey;
     text-decoration: none; 
     text-transform: capitalize;
-    padding: 25px 25px 25px 5px;
+    padding: 12px 25px 20px 5px;
+    display: inline-block;
+    text-align: center;
 }
-#mail {
+.mail {
     font-size: 18px;
     color: lightgrey;
     text-decoration: none;
-    padding: 25px 25px 25px 10px;
+    text-transform: capitalize;
+    padding: 12px 25px 20px 5px;
     display: inline-block;
+    text-align: center;
 }
 .fa-instagram {
-    padding: 25px 0px 0px 25px;
+    padding: 0px 0px 0px 0px;
     font-size: 25px;
 }
 .fa-envelope {
+    font-size: 25px;
+}
+.youtube {
+    font-size: 18px;
+    color: lightgrey;
+    text-decoration: none; 
+    text-transform: capitalize;
+    padding: 12px 25px 20px 5px;
+    display: inline-block;
+}
+.fa-youtube {
     padding: 25px 0px 0px 25px;
     font-size: 25px;
 }
 footer a:hover {
-    color: red;
+    color: black;
+    transform: scale(1.05);
+    transition: all 0.6s;
 }
 .regresar {
     height: 60px;
@@ -1291,3 +1318,5 @@ footer a:hover {
         height: 20%;
     }
 }
+
+
