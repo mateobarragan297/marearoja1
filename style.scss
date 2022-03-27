@@ -77,10 +77,10 @@ nav a:hover {
 
 #titulos{
     background-image: linear-gradient(2deg);
-    background-image: linear-gradient(to bottom, black, rgba(255,255,255,0)20%), url(imageninicio.jpg);
+    background-image: linear-gradient(to bottom, black, rgba(255,255,255,0)20%), url(mareacampeon.jpg);
     width: 100%;
     background-size: cover;
-    padding-bottom: 50%;
+    padding-bottom: 60%;
 }
 
 @mixin titles($ffamily, $fsize, $color){
@@ -182,15 +182,17 @@ section h2 {
     padding-top: 5%;
     display: grid;
     grid-template-areas: 
-        "rectangulo1 imagen1 rectangulo2 cuerpo1";
+        "imagen1 cuerpo1";
     grid-template-columns: 20% 10% 20% 20%;
-    margin-left: 25%;
+    margin-left: 30%;
 }
 .imagen1 {
-    height: 95%;
-    width: 170%;
+    height: 90%;
+    width: 290%;
     filter: grayscale(10%);
     z-index: 1;
+    border-radius: 20px;
+    box-shadow: 0px 20px 40px -6px black;
 }
 .imagen1:hover {
     filter: grayscale(90%);
@@ -212,6 +214,7 @@ section h2 {
     z-index: 2;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0px 20px 40px -6px black;
 }
 /*FIN PRIMERA FOTO Y PRIMER TEXTO------------------------------------------------------------------------------------------*/
 
@@ -223,9 +226,9 @@ section h2 {
     padding-top: 5%;
     display: grid;
     grid-template-areas: 
-        "rectangulo1 imagen1 rectangulo2 cuerpo1";
+        "imagen1 cuerpo1";
     grid-template-columns: 20% 10% 20% 20%;
-    margin-left: 25%;
+    margin-left: 30%;
 
 }
 .imagen2 {
@@ -233,6 +236,8 @@ section h2 {
     width: 290%;
     filter: grayscale(10%);
     z-index: -1;
+    border-radius: 20px;
+    box-shadow: 0px 20px 40px -6px black;
 }
 .imagen2:hover {
     filter: grayscale(90%);
@@ -254,28 +259,10 @@ section h2 {
     z-index: 2;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5%;
+    box-shadow: 0px 20px 40px -6px black;
 }
 /*FIN SEGUNDA FOTO Y SEGUNDO TEXTO-------------------------------------------------------------------------------------------*/
-
-
-
-
-/*RECTÁNGULOS PARA LAS IMAGENES----------------------------------------------------------------------------------------------*/
-.rectangulo1 {
-    height: 90%;
-    width: 200%;
-    background-color: black;
-    opacity: 80%;
-    z-index: -2;
-}
-.rectangulo2 {
-    @extend .rectangulo1;
-    background-color: $color3;
-    filter: grayscale(30%);
-    z-index: -1;
-}
-/*FIN RECTÁNGULOS PARA IMAGENES--------------------------------------------------------------------------------------------------*/
-
 
 
 /*FORMULARIO CONTACTO-------------------------------------------------------------------------------------------------------------*/
@@ -380,6 +367,7 @@ $links: (
     .ftr--#{$link} {
         background-color: $color;
         border-radius: 10px;
+        box-shadow: 0px 4px 15px -5px lightgrey;
         width: 20%;
         margin: 1%;
         text-align: center;
