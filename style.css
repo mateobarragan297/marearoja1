@@ -77,7 +77,7 @@ section h1 {
   font-family: fantasy;
   font-size: 100px;
   color: #D70000;
-  -webkit-text-stroke: 1px lightgrey;
+  -webkit-text-stroke: 1px #D4D4D4;
   text-transform: uppercase;
   padding: 3% 0px 1% 0px;
   filter: grayscale(25%);
@@ -127,17 +127,17 @@ section h2 {
   }
 }
 /*#seccion3 {
-    height: 15%;
-    width: 7%;
-    background-color: red;
-    padding: 17px;
-    border-radius: 45px;
-    border: 2px solid white;
-    filter: grayscale(10%);
-    position: absolute;
-    background-image: url(marearoja.png);
-    background-size: cover;
-    z-index: 1;
+  height: 15%;
+  width: 7%;
+  background-color: red;
+  padding: 17px;
+  border-radius: 45px;
+  border: 2px solid white;
+  filter: grayscale(10%);
+  position: absolute;
+  background-image: url(marearoja.png);
+  background-size: cover;
+  z-index: 1;
 }*/
 .imageninicio {
   /*height: 120px;
@@ -282,7 +282,7 @@ label {
 }
 
 .formulario input {
-  background-color: lightgrey;
+  background-color: #D4D4D4;
   filter: grayscale(30%);
 }
 
@@ -311,14 +311,14 @@ label {
 
 #enviar {
   color: black;
-  background-color: lightgrey;
+  background-color: #D4D4D4;
   width: 10%;
   border-radius: 10px;
 }
 
 #enviar:hover {
   color: white;
-  background-color: darkgray;
+  background-color: #AFAFAF;
   transition: all 0.4s ease-in-out;
 }
 
@@ -356,7 +356,7 @@ hr {
 .ftr--link1 {
   background-color: #bd0000;
   border-radius: 10px;
-  box-shadow: 0px 4px 15px -5px lightgrey;
+  box-shadow: 0px 4px 15px -5px #D4D4D4;
   width: 20%;
   margin: 1%;
   text-align: center;
@@ -365,7 +365,7 @@ hr {
 .ftr--link2 {
   background-color: #940000;
   border-radius: 10px;
-  box-shadow: 0px 4px 15px -5px lightgrey;
+  box-shadow: 0px 4px 15px -5px #D4D4D4;
   width: 20%;
   margin: 1%;
   text-align: center;
@@ -374,7 +374,7 @@ hr {
 .ftr--link3 {
   background-color: #640000;
   border-radius: 10px;
-  box-shadow: 0px 4px 15px -5px lightgrey;
+  box-shadow: 0px 4px 15px -5px #D4D4D4;
   width: 20%;
   margin: 1%;
   text-align: center;
@@ -382,7 +382,7 @@ hr {
 
 .footer {
   font-family: sans-serif;
-  color: #a5a1a1;
+  color: #AFAFAF;
   background-color: black;
   background-size: cover;
   width: 100%;
@@ -393,7 +393,7 @@ hr {
 
 .instagram {
   font-size: 18px;
-  color: lightgrey;
+  color: #D4D4D4;
   text-decoration: none;
   text-transform: capitalize;
   padding: 12px 25px 20px 5px;
@@ -403,7 +403,7 @@ hr {
 
 .mail {
   font-size: 18px;
-  color: lightgrey;
+  color: #D4D4D4;
   text-decoration: none;
   text-transform: capitalize;
   padding: 12px 25px 20px 5px;
@@ -422,7 +422,7 @@ hr {
 
 .youtube {
   font-size: 18px;
-  color: lightgrey;
+  color: #D4D4D4;
   text-decoration: none;
   text-transform: capitalize;
   padding: 12px 25px 20px 5px;
@@ -443,7 +443,7 @@ footer a:hover {
 .regresar {
   height: 60px;
   width: 60px;
-  background-color: red;
+  background-color: #D70000;
   position: fixed;
   right: 20px;
   bottom: 20px;
