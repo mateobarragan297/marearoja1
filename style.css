@@ -323,7 +323,7 @@ label {
 }
 
 button {
-  background-color: #eb4444;
+  background-color: rgb(235, 68, 68);
   filter: grayscale(20%);
   border-radius: 10px;
   width: 11%;
@@ -354,7 +354,7 @@ hr {
 }
 
 .ftr--link1 {
-  background-color: #bd0000;
+  background-color: rgb(189, 0, 0);
   border-radius: 10px;
   box-shadow: 0px 4px 15px -5px #D4D4D4;
   width: 20%;
@@ -363,7 +363,7 @@ hr {
 }
 
 .ftr--link2 {
-  background-color: #940000;
+  background-color: rgb(148, 0, 0);
   border-radius: 10px;
   box-shadow: 0px 4px 15px -5px #D4D4D4;
   width: 20%;
@@ -372,7 +372,7 @@ hr {
 }
 
 .ftr--link3 {
-  background-color: #640000;
+  background-color: rgb(100, 0, 0);
   border-radius: 10px;
   box-shadow: 0px 4px 15px -5px #D4D4D4;
   width: 20%;
